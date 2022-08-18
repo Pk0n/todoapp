@@ -171,10 +171,12 @@
 
 form
 {
-  width: 85%;
-  max-width: 300px;
-  background-color: #8a8a8a;
-  padding: 30px 40px;
+  width: 45%;
+  max-width: 55%;
+  height: 45%;
+  max-height: 65%;
+  background-color: #d3d3d3;
+  padding: 10px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,16 +187,74 @@ label
 {
   text-align: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   color: #3d3d3d;
   margin-bottom: 26px;
+  word-spacing: 4px;
 }
 
 textarea
 {
   background-color: #aeaeae;
   border: 2px solid #202329;
-  border-radius: 7px;
+  border-radius: 9px;
+  box-shadow: 0 10px 50px #383838;
+  color: #1E1E1F;
+  font-size: 25px;
+  word-spacing: 4px;
+  text-align: center;
+  padding: 20px;
+  height: 95px;
+  width: calc(100% - 35px);
+  resize: none;
+}
+
+textarea::placeholder
+{
+  color: #515151;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  padding: 4%;
+}
+
+textarea:focus
+{
+  outline-color: #666666;
+}
+
+.TodoForm-buttonContainer
+{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.TodoForm-button
+{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 22px;
+  color: #202020;
+  font-weight: 400;
+  width: 120px;
+  height: 48px;
+  border-radius: 4px;
+  font-family: 'Montserrat';
+}
+
+.TodoForm-addButton
+{
+  background: #999999;
+  box-shadow: 0 5px 25px #5f5f5f;
+  border: solid 1px #5c5c5c;
+}
+
+.TodoForm-cancelButton
+{
+  background: transparent;
+  border: solid 1px #6e6e6e;
 }
 
 body 
